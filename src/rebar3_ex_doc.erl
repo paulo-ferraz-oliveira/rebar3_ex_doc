@@ -23,7 +23,7 @@
 %% Public API
 %% ===================================================================
 
--spec init(rebar_state:t()) -> {ok, rebar_state:t()}.
+-spec init(rebar_state:t()) -> error.
 init(State) ->
     State1 = rebar_state:add_provider(
         State,
